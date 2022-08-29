@@ -5,8 +5,8 @@ vertical-align: middle;
 
 .main-menu {
 /*list-style-type: none;*/
-margin: 0 ;
-padding: 20px ;
+margin: 20px ;
+padding: 0 ;
 }
 
 .main-menu li {
