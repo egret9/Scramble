@@ -24,6 +24,7 @@ padding: 0 ;
 .main-menu li {
 display: inline-block;
 width: 120px;
+height: 100px;
 }
 
 .main-menu li a {
