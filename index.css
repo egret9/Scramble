@@ -1,0 +1,35 @@
+.main-menu li{
+display: inline-block;
+}
+
+.main-menu {
+list-style-type: none;
+}
+
+.main-menu li a{
+text-decoration: none;
+}
+
+nav{
+text-align: center;
+}
+
+.main-menu {
+list-style-type: none;
+margin: 0 ;
+padding: 0 ;
+}
+
+.main-menu li {
+display: inline-block;
+width: 120px;
+}
+
+.main-menu li a {
+text-decoration: none;
+color: #333;
+}
+
+nav ul li a:hover{
+color: orange;
+}
