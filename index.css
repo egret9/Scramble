@@ -1,16 +1,3 @@
-
-.main-menu li{
-display: inline-block;
-}
-
-.main-menu {
-list-style-type: none;
-}
-
-.main-menu li a{
-text-decoration: none;
-}
-
 nav{
 text-align: center;
 }
