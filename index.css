@@ -4,14 +4,13 @@ text-align: center;
 
 .main-menu {
 list-style-type: none;
-margin: 0 ;
-padding: 0 ;
+margin: 50px ;
+padding: 50px ;
 }
 
 .main-menu li {
 display: inline-block;
 width: 120px;
-height: 100px;
 }
 
 .main-menu li a {
