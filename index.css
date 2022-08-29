@@ -1,16 +1,3 @@
-.main-content{
-  height:1000px;
-  
-}
-
-
-.sidebar{
-  height:100px;
-  top:10px;
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 nav{
 text-align: center;
 vertical-align: middle;
@@ -19,7 +6,7 @@ vertical-align: middle;
 .main-menu {
 list-style-type: none;
 margin: 0 ;
-padding: 0 ;
+padding: 20px ;
 }
 
 .main-menu li {
