@@ -4,7 +4,7 @@ vertical-align: middle;
 }
 
 .main-menu {
-/*list-style-type: none;*/
+list-style-type: none;
 margin: 0 ;
 padding: 0 ;
 }
@@ -15,7 +15,7 @@ width: 180px;
 }
 
 .main-menu li a {
-text-decoration: none;
+text-decoration: underline;
 color: #333;
 }
 
