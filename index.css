@@ -1,3 +1,10 @@
+.sidebar{
+  height:100px;
+  top:10px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 nav{
 text-align: center;
 vertical-align: middle;
