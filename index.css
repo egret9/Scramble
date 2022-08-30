@@ -38,10 +38,8 @@ color: orange ;
 
 
 h1 {
-padding: 0 0 0 20px;
-border-left: solid 7px #01bd5a;
+text-align: center ;
 font-size: 30px;
-line-height: 1.4;
 }
 h2 {
 margin: 45px 0 0;
