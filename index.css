@@ -36,3 +36,32 @@ nav ul li a:hover{
 color: orange ;
 }
 
+
+h1 {
+padding: 0 0 0 20px;
+border-left: solid 7px #01bd5a;
+font-size: 30px;
+line-height: 1.4;
+}
+h2 {
+margin: 45px 0 0;
+padding: 0 0 4px;
+font-size: 30px;
+border-bottom: 4px solid #d2e3de;
+line-height: 1.4;
+}
+h3 {
+margin: 35px 0 0;
+padding: 0 0 6px;
+border-bottom: solid 1px #ccc;
+font-size: 26px;
+}
+h3::before {
+margin: 0 6px 0 0;
+content: "\f0dd";
+color: #26990A;
+font-family: FontAwesome;
+position: relative;
+top: -4px;
+}
+
