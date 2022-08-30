@@ -11,14 +11,16 @@ padding: 0 ;
 
 .main-menu li {
 display: inline-block;
-width: 180px;
+width:180px; height:40px;	
 }
 
 .main-menu li a {
 text-decoration: none;
 display:block;			/*リンク部分をブロック表示にする*/
-width:180px; height:50px;	/*幅と高さ*/
+/*幅と高さ*/
 color: #333;
+display: block;
+padding: 10%;
 }
 
 nav ul li a:hover{
