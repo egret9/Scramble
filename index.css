@@ -29,7 +29,7 @@ display:block ;			/*リンク部分をブロック表示にする*/
 /*幅と高さ*/
 
 color: #333 ;
-padding: 10% ;
+/*padding: 10% ;*/
 }
 
 nav ul li a:hover{
