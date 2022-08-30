@@ -1,32 +1,33 @@
 nav{
-text-align: center;
-vertical-align: middle;
+background-color: #f08080 ;
+text-align: center ;
+vertical-align: middle ;
 }
 
 .main-menu {
-list-style-type: none;
+list-style-type: none ;
 margin: 0 ;
 padding: 0 ;
 
 }
 
 .main-menu li {
-display: inline-block;
-width:180px; height:40px;	
+display: inline-block ;
+width:180px ; height:40px ;	
 
 }
 
 .main-menu li a {
-text-decoration: none;
-display:block;			/*リンク部分をブロック表示にする*/
+text-decoration: none ;
+display:block ;			/*リンク部分をブロック表示にする*/
 /*幅と高さ*/
 
-color: #333;
-display: block;
-padding: 10%;
+color: #333 ;
+display: block ;
+padding: 10% ;
 }
 
 nav ul li a:hover{
-color: orange;
+color: orange ;
 }
 
