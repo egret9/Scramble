@@ -51,3 +51,19 @@ border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
 font-size: 15px;
 }
 
+h4 {
+    margin: 35px 0 0;
+    padding: 0 0 6px;
+    border-bottom: solid 1px #ccc;
+    font-size: 26px;
+}
+ 
+h4::before {
+    margin: 0 6px 0 0;
+    content: "\f0dd";
+    color: #26990A;
+    font-family: FontAwesome;
+    position: relative;
+    top: -4px;
+}
+
