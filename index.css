@@ -1,7 +1,8 @@
 nav{
 background-color: #e6e6fa ;
+height: 50px;
 text-align: center ;
-vertical-align: middle ;
+/*vertical-align: middle ;*/
 }
 
 .main-menu {
@@ -13,7 +14,8 @@ padding: 0 ;
 
 .main-menu li {
 display: inline-block ;
-width:180px ; height:40px ;	
+width:180px ; 
+height:40px ;	
 
 }
 
@@ -23,7 +25,6 @@ display:block ;			/*リンク部分をブロック表示にする*/
 /*幅と高さ*/
 
 color: #333 ;
-display: block ;
 padding: 10% ;
 }
 
