@@ -7,11 +7,12 @@ vertical-align: middle;
 list-style-type: none;
 margin: 0 ;
 padding: 0 ;
+width:180px; height:40px;	
 }
 
 .main-menu li {
 display: inline-block;
-width:180px; height:40px;	
+
 }
 
 .main-menu li a {
