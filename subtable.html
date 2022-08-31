@@ -46,87 +46,87 @@
                     <li><a href="https://egret9.github.io/Scramble/other.html">その他</a></li>
                 </font>
             </ul>
-                                   
+        </nav>             
         <div class="container">                     
-        </nav>
-        <br>
-        <h3>Sub難易度表</h3>
-        <font size="4">
-        <br>
-        <p>正式難易度表から削除された譜面、提案が否決された譜面が収録されています。</p>
-        <p>難易度に関しては削除された時点の難易度・提案時の推定難易度がそのまま反映されています。</p>
-        <p>今のところ難易度変更の予定はありません。詐称逆詐称が散見される状態となっています。</p>
-        <br>
-        <p>難易度表の表示に数秒かかります。</p>
-        <br>
-        </font>
-        
-    
-        <!--ここから難易度表本体-->
-        <div>
-            <table class="table table-light table-striped table-hover" id="table_int">
-            </table>
-        </div>
-        <script language="javascript" type="text/javascript">
-            $(document).ready(function () {
-                $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
-                    $.getJSON(header.data_url, function (information) {
-                        makeBMSTable(information, header.symbol);
+            
+            <br>
+            <h3>Sub難易度表</h3>
+            <font size="4">
+            <br>
+            <p>正式難易度表から削除された譜面、提案が否決された譜面が収録されています。</p>
+            <p>難易度に関しては削除された時点の難易度・提案時の推定難易度がそのまま反映されています。</p>
+            <p>今のところ難易度変更の予定はありません。詐称逆詐称が散見される状態となっています。</p>
+            <br>
+            <p>難易度表の表示に数秒かかります。</p>
+            <br>
+            </font>
+
+
+            <!--ここから難易度表本体-->
+            <div>
+                <table class="table table-light table-striped table-hover" id="table_int">
+                </table>
+            </div>
+            <script language="javascript" type="text/javascript">
+                $(document).ready(function () {
+                    $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
+                        $.getJSON(header.data_url, function (information) {
+                            makeBMSTable(information, header.symbol);
+                        });
                     });
                 });
-            });
 
-            function makeBMSTable(info, mark) {
-                var x = "";
-                var ev = "";
-                var count = 0;
-                var obj = $("#table_int");
+                function makeBMSTable(info, mark) {
+                    var x = "";
+                    var ev = "";
+                    var count = 0;
+                    var obj = $("#table_int");
 
-                obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
-                    .appendTo(obj);
-                var obj_sep = null;
-                for (var i = 0; i < info.length; i++) {
-                    if (x != info[i].level) {
-                        if (obj_sep != null) {
-                            obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
-                                "譜面)</b></td>");
+                    obj.html("");
+                    $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
+                        .appendTo(obj);
+                    var obj_sep = null;
+                    for (var i = 0; i < info.length; i++) {
+                        if (x != info[i].level) {
+                            if (obj_sep != null) {
+                                obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
+                                    "譜面)</b></td>");
+                            }
+                            obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
+                                "'></tr>");
+                            obj_sep.appendTo(obj);
+                            count = 0;
+                            x = info[i].level;
                         }
-                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
-                            "'></tr>");
-                        obj_sep.appendTo(obj);
-                        count = 0;
-                        x = info[i].level;
+
+                        var str = $("<tr></tr>");
+
+                        // Level
+                        $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+
+                        // Title
+                        $("<td width='45%'>" +
+                            "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
+                                i]
+                            .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+
+                        // Artist
+                        $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
+
+                        // Comment
+                        $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                        str.appendTo(obj);
+                        count++;
+
                     }
+                    $("</tbody>").appendTo(obj);
 
-                    var str = $("<tr></tr>");
-
-                    // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
-
-                    // Title
-                    $("<td width='45%'>" +
-                        "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
-                            i]
-                        .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
-
-                    // Artist
-                    $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
-
-                    // Comment
-                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
-                    str.appendTo(obj);
-                    count++;
-
+                    if (obj_sep != null) {
+                        obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
+                            " (" + count + "譜面)</b></td>");
+                    }
                 }
-                $("</tbody>").appendTo(obj);
-
-                if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
-                        " (" + count + "譜面)</b></td>");
-                }
-            }
-        </script>
+            </script>
     </div>
 </body>
 </html>
