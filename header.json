@@ -3,3 +3,5 @@
 "symbol" : "SB",
 "data_url" : "https://script.google.com/macros/s/AKfycbw5pnMwlCFZz7wDY5kRsBpfSm0-luKszs8LQAEE6BKkVT1R78-CpB4WA9chW-gdBsF7IA/exec"
 }
+
+{"name":"Scramble MASTER","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["dbfae6c6cc12fe0a8cfac528d6ef2204","1826bc834164f08bdf254c1759286a37","9db892b1b621caa4f35c9c0f5b508261","afcb96517ba1250bfd094de28ff2e735"]}
