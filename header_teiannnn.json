@@ -1,5 +1,34 @@
-{
-"name" : "Scramble 差分提案一覧",
-"symbol" : "SB",
-"data_url" : "https://script.google.com/macros/s/AKfycbwxmAMDIVHHzLTdylRgQU5Hr0jUrppxRSpa5R40oJ6j98j7rU4R6JxDoAqHSGJ0t58R/exec"
-}
+
+
+
+
+
+
+
+
+
+{"name" : "Scramble 差分提案一覧","symbol" : "SB","data_url" : "https://script.google.com/macros/s/AKfycbwxmAMDIVHHzLTdylRgQU5Hr0jUrppxRSpa5R40oJ6j98j7rU4R6JxDoAqHSGJ0t58R/exec","level_order" : [-1,0,1,2,3,4,5,6,7,8,9,10,11,12,"!i"],
+"course":[
+{"name":"Scramble Skill Simulator 1st(test) SB9","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["fd59673c8e04c640e8b6c76bad3b4c72","1a89ba0ab527113fc3d00d63870a69a4","bbf3c39c723d486d7f73560692400246"]},
+{"name":"Scramble MASTER","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["dbfae6c6cc12fe0a8cfac528d6ef2204","1826bc834164f08bdf254c1759286a37","9db892b1b621caa4f35c9c0f5b508261","afcb96517ba1250bfd094de28ff2e735"]}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}
