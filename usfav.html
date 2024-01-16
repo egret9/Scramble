@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <title>SCRATCH PARTY 差分まとめ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bmstable" content="header_scratch_party.json" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header class="mb-3">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">SCRATCH PARTY 差分まとめ</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="alert alert-success mb-3" role="alert">
+            <p>差分企画「<a href="https://note.com/egret_sb/n/n29a738298133">Scratch PARTY</a>」に提出頂いた差分をまとめたものです。差分の導入にご活用ください。</p>
+            <p>BeMusicSeeker等で導入する場合はこのページのURLをコピーしてください。</p>
+            <p>※02/03追記 Aloof Wolf [SCR cut-up]の修正版に対応しました</p>
+            <hr>
+            <p class="mb-0">難易度表の表示に数秒かかります</p>
+        </div>
+
+
+        <!--ここから難易度表本体-->
+        <div>
+            <table class="table table-light table-striped table-hover" id="table_int">
+            </table>
+        </div>
+        <script language="javascript" type="text/javascript">
+            $(document).ready(function () {
+                $.getJSON($("meta[name=bmstable]").attr("content"), function (header) {
+                    $.getJSON(header.data_url, function (information) {
+                        makeBMSTable(information, header.symbol);
+                    });
+                });
+            });
+
+            function makeBMSTable(info, mark) {
+                var x = "";
+                var ev = "";
+                var count = 0;
+                var obj = $("#table_int");
+
+                obj.html("");
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
+                    .appendTo(obj);
+                var obj_sep = null;
+                for (var i = 0; i < info.length; i++) {
+                    if (x != info[i].level) {
+                        if (obj_sep != null) {
+                            obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
+                                "譜面)</b></td>");
+                        }
+                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
+                            "'></tr>");
+                        obj_sep.appendTo(obj);
+                        count = 0;
+                        x = info[i].level;
+                    }
+
+                    var str = $("<tr></tr>");
+
+                    // Level
+                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    
+                    // Title
+                    
+                    if (info[i].md5 != "" && info[i].md5 != null) {
+                        $("<td width='45%'>" +
+                            "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i]
+                            .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                    }
+                    else{
+                        $("<td width='45%'>" +
+                            "<a href='https://mocha-repository.info/song.php?sha256=" + info[i]
+                            .sha256 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                    }
+
+                    // Artist
+                    $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
+
+                    // Comment
+                    $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    str.appendTo(obj);
+                    count++;
+
+                }
+                $("</tbody>").appendTo(obj);
+
+                if (obj_sep != null) {
+                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
+                        " (" + count + "譜面)</b></td>");
+                }
+            }
+        </script>
+    </div>
+
+</html>
