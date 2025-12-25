@@ -1,7 +1,7 @@
 {
   "name" : "obj:E_Charttable",
   "symbol" : "E",
-  "data_url" : "https://script.google.com/macros/s/AKfycbxWXI1VD2d-wpgd7rC8_YLdx5z64VEjnHw2_nUV4oimv0ClV51PbSAjLBehU33OOqRUMA/exec"
+  "data_url" : "https://script.google.com/macros/s/AKfycbxWXI1VD2d-wpgd7rC8_YLdx5z64VEjnHw2_nUV4oimv0ClV51PbSAjLBehU33OOqRUMA/exec",
   "course" : [
     {"name":"obj:E_ChartTable 段位認定 1st 初級","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["58b853c049822d5440661137041d41a7","3d26493d9e2775a72979888e3372739f","b72f2a365ea928e3f84319a97d02693e"]},
     {"name":"obj:E_ChartTable 段位認定 1st 上級","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["069b702efa6fe07bb528f78a664cc10f","85d1089882b7b0ce4689beb3e91614f1","db5c42a48fca19251f4d44e2dc347348"]},
