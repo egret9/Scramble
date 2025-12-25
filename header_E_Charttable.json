@@ -1,5 +1,16 @@
 {
-"name" : "obj:E_Charttable",
-"symbol" : "E",
-"data_url" : "https://script.google.com/macros/s/AKfycbxWXI1VD2d-wpgd7rC8_YLdx5z64VEjnHw2_nUV4oimv0ClV51PbSAjLBehU33OOqRUMA/exec"
+  "name" : "obj:E_Charttable",
+  "symbol" : "E",
+  "data_url" : "https://script.google.com/macros/s/AKfycbxWXI1VD2d-wpgd7rC8_YLdx5z64VEjnHw2_nUV4oimv0ClV51PbSAjLBehU33OOqRUMA/exec"
+  "course" : [
+    {"name":"obj:E_ChartTable 段位認定 1st 初級","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["58b853c049822d5440661137041d41a7","3d26493d9e2775a72979888e3372739f","b72f2a365ea928e3f84319a97d02693e"]},
+    {"name":"obj:E_ChartTable 段位認定 1st 上級","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["069b702efa6fe07bb528f78a664cc10f","85d1089882b7b0ce4689beb3e91614f1","db5c42a48fca19251f4d44e2dc347348"]},
+    {"name":"obj:E_ChartTable 段位認定 1st 初段","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["4cccb944fa722f7f63ca741b17f8a2c5","d0379436de4c973fdc986cc6b7525523","ebf75354a4bd0f8bfb8d1702a4a67bb6"]},
+    {"name":"obj:E_ChartTable 段位認定 1st 二段","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["6a7b5eb681d3096f3f0699e660535b91","643c91096f35d0622ca3446b6562865f","425e419683791cd74641aafb41d4aaba"]},
+    {"name":"obj:E_ChartTable 段位認定 1st 三段","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["17321caeb31b7ede238a11d3c0cb68c9","c97e9dd720a6b9eedc70760d8cbc22b5","72de72d91f0fb1978092a392256ca93b"]},
+    {"name":"obj:E_ChartTable 段位認定 1st 四段","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["17321caeb31b7ede238a11d3c0cb68c9","c97e9dd720a6b9eedc70760d8cbc22b5","72de72d91f0fb1978092a392256ca93b"]},
+    {"name":"obj:E_ChartTable 段位認定 1st 五段","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["17321caeb31b7ede238a11d3c0cb68c9","c97e9dd720a6b9eedc70760d8cbc22b5","72de72d91f0fb1978092a392256ca93b"]},
+    {"name":"obj:E_ChartTable 段位認定 1st SCR初級","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["6b314b6591c8860de5104876470d4ee5","0436fbeab8f2e47c95288031375fefab","d85e3e81ebd15c213bc3326acbb25991"]},
+    {"name":"obj:E_ChartTable 段位認定 1st SCR極級","constraint":["grade_mirror","gauge_lr2","ln",""],"md5": ["bacfc9c2aec59d14a7ea33dce2509817","967cd9bf08be896e08f0a9c68e93c71b","1a0f8f04477d10129fa79426e9b9c7b9"]},
+  ]
 }
