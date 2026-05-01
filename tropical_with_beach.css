@@ -1,0 +1,66 @@
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #033;
+}
+
+/* ナビバー */
+.tropical-navbar {
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* ガラス風パネル */
+.tropical-alert {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+/* テーブル */
+.tropical-table {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* ヘッダー */
+.tropical-thead {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    color: white;
+}
+
+/* 区切り */
+.tropical-sep {
+    background: linear-gradient(90deg, #43e97b, #38f9d7);
+    text-align: center;
+    color: #033;
+    font-weight: bold;
+}
+
+/* ホバー */
+.tropical-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+/* リンク */
+a {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e91e63;
+    text-decoration: underline;
+}
