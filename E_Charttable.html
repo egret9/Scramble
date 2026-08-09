@@ -88,7 +88,7 @@
                 $("<td>" + mark + x + "</td>").appendTo(str);
 
                 if (info[i].md5) {
-                    $("<td><a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+                    $("<td><a href='https://www.bms-ir.org/new/song?songmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
                 } else {
                     $("<td><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
                 }
